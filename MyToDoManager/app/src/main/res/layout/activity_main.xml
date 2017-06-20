@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/TabDeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="By Deadline" />
+
+            <Button
+                android:id="@+id/TabPriority"
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/TabDeadline"
+                android:layout_toRightOf="@+id/TabDeadline"
+                android:text="By Priority" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="188dp"
+        android:layout_weight="0.98"
+        android:scrollbars="vertical" />
+
+    <include layout="@layout/footer_view"/>
+
+</LinearLayout>
