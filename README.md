@@ -1,3 +1,3 @@
 # To-Do-Manager---Android-App-
 
-A To Do Manager Android application.
+This Android application is used to save Tasks a user must complete and alert them when their task is due.
